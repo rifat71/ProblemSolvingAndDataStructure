@@ -1,4 +1,4 @@
-public class MergeSort {
+public class MergeSortAscending {
     static void printArray(int[] ary) {
         for (int j : ary) System.out.print(j + " ");
         System.out.println();
@@ -57,11 +57,11 @@ public class MergeSort {
     }
     public static void main(String[] args) {
         int[] ary = {12, 11, 13, 5, 6, 7};
-        MergeSort mergeSort = new MergeSort();
+        MergeSortAscending mergeSort = new MergeSortAscending();
         System.out.println("Given Array");
-        MergeSort.printArray(ary);
+        MergeSortAscending.printArray(ary);
         mergeSort.sort(ary, 0, ary.length - 1);
-        System.out.println("\nSorted array");
-        MergeSort.printArray(ary);
+        System.out.println("\nSorted array in ascending order");
+        MergeSortAscending.printArray(ary);
     }
 }
