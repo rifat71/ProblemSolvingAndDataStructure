@@ -1,4 +1,6 @@
-public class MergeSortDescending {
+package dataStructure;
+
+public class MergeSortAscending {
     static void printArray(int[] ary) {
         for (int j : ary) System.out.print(j + " ");
         System.out.println();
@@ -29,8 +31,7 @@ public class MergeSortDescending {
 
         int i = 0, j = 0, k = left;
         while (i < left_size && j < right_size) {
-            // only line need to change to generate descending order
-            if (leftArray[i] >= rightArray[j]) {
+            if (leftArray[i] <= rightArray[j]) {
                 ary[k] = leftArray[i];
                 i++;
             } else {
@@ -58,11 +59,11 @@ public class MergeSortDescending {
     }
     public static void main(String[] args) {
         int[] ary = {12, 11, 13, 5, 6, 7};
-        MergeSortDescending mergeSort = new MergeSortDescending();
+        MergeSortAscending mergeSort = new MergeSortAscending();
         System.out.println("Given Array");
-        MergeSortDescending.printArray(ary);
+        MergeSortAscending.printArray(ary);
         mergeSort.sort(ary, 0, ary.length - 1);
-        System.out.println("\nSorted array in descending order");
-        MergeSortDescending.printArray(ary);
+        System.out.println("\nSorted array in ascending order");
+        MergeSortAscending.printArray(ary);
     }
 }
