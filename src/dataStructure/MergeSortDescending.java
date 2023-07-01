@@ -59,7 +59,7 @@ public class MergeSortDescending {
         }
     }
     public static void main(String[] args) {
-        int[] ary = {12, 11, 13, 5, 6, 7};
+        int[] ary = {56, 8, 95, 15, 60, 2};
         MergeSortDescending mergeSort = new MergeSortDescending();
         System.out.println("Given Array");
         MergeSortDescending.printArray(ary);
