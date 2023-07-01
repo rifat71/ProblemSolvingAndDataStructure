@@ -7,8 +7,14 @@ public class Main {
         // Press Shift+F10 or click the green arrow button in the gutter to run the code.
         // Press Shift+F9 to start debugging your code. We have set one breakpoint
         // for you, but you can always add more by pressing Ctrl+F8.
+        int[] ary = {12, 11, 13, 5, 6, 7};
 
         MergeSort mergeSort = new MergeSort();
-        mergeSort.print();
+        System.out.println("Given Array");
+        MergeSort.printArray(ary);
+        mergeSort.mergeSort(ary, 0, ary.length-1);
+
+        System.out.println("\nSorted array");
+        MergeSort.printArray(ary);
     }
 }
